@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "name": "TechNova Solutions",
+    "description": "Innovative software development company specializing in AI and machine learning applications.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Technology",
+      "Artificial Intelligence",
+      "Enterprise Software"
+    ],
+    "lastUpdated": "2024-10-23T18:02:11.925Z"
+  },
+  {
+    "id": 2,
+    "name": "GreenLeaf Renewables",
+    "description": "Sustainable energy company focusing on solar and wind power solutions.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Energy",
+      "Sustainability",
+      "Clean Tech"
+    ],
+    "lastUpdated": "2023-04-14T16:45:00Z"
+  },
+  {
+    "id": 3,
+    "name": "HealthPlus Innovations",
+    "description": "Healthcare technology company developing wearable devices for remote patient monitoring.",
+    "pipelineStatus": "Passed",
+    "markets": [
+      "Healthcare",
+      "Wearable Technology",
+      "IoT"
+    ],
+    "lastUpdated": "2023-04-13T09:15:00Z"
+  },
+  {
+    "id": 4,
+    "name": "FinSecure Systems",
+    "description": "Cybersecurity firm specializing in financial sector protection and compliance.",
+    "pipelineStatus": "Cold",
+    "markets": [
+      "Cybersecurity",
+      "Finance",
+      "Regulatory Compliance"
+    ],
+    "lastUpdated": "2023-04-12T14:20:00Z"
+  },
+  {
+    "id": 5,
+    "name": "EduTech Pioneers",
+    "description": "EdTech startup creating interactive learning platforms for K-12 education.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Education",
+      "E-learning",
+      "EdTech"
+    ],
+    "lastUpdated": "2023-04-11T11:00:00Z"
+  },
+  {
+    "id": 6,
+    "name": "LogiSmart Solutions",
+    "description": "Supply chain optimization company using IoT and blockchain technologies.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Logistics",
+      "Supply Chain",
+      "Blockchain"
+    ],
+    "lastUpdated": "2023-04-10T17:30:00Z"
+  },
+  {
+    "id": 7,
+    "name": "AgroTech Innovations",
+    "description": "Agricultural technology company developing smart farming solutions and crop management systems.",
+    "pipelineStatus": "Closed",
+    "markets": [
+      "Agriculture",
+      "IoT",
+      "Sustainability"
+    ],
+    "lastUpdated": "2023-04-09T13:45:00Z"
+  },
+  {
+    "id": 8,
+    "name": "VirtualReality Worlds",
+    "description": "VR/AR company creating immersive experiences for entertainment and training purposes.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Virtual Reality",
+      "Augmented Reality",
+      "Entertainment"
+    ],
+    "lastUpdated": "2023-04-08T10:00:00Z"
+  },
+  {
+    "id": 9,
+    "name": "BioGen Therapeutics",
+    "description": "Biotechnology company focused on developing gene therapies for rare diseases.",
+    "pipelineStatus": "Closed",
+    "markets": [
+      "Biotechnology",
+      "Healthcare",
+      "Pharmaceuticals"
+    ],
+    "lastUpdated": "2024-10-23T18:26:07.953Z"
+  },
+  {
+    "id": 10,
+    "name": "EcoPackage Innovations",
+    "description": "Sustainable packaging company creating biodegradable alternatives to plastic products.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Packaging",
+      "Sustainability",
+      "Consumer Goods"
+    ],
+    "lastUpdated": "2023-04-06T12:10:00Z"
+  },
+  {
+    "id": 11,
+    "name": "DataFlow Analytics",
+    "description": "Big data analytics company providing insights for enterprise decision-making.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Big Data",
+      "Business Intelligence",
+      "Enterprise Software"
+    ],
+    "lastUpdated": "2023-04-05T09:30:00Z"
+  },
+  {
+    "id": 12,
+    "name": "NanoMed Therapeutics",
+    "description": "Nanotechnology-based drug delivery systems for targeted cancer treatments.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Nanotechnology",
+      "Healthcare",
+      "Pharmaceuticals"
+    ],
+    "lastUpdated": "2023-04-04T14:15:00Z"
+  },
+  {
+    "id": 13,
+    "name": "EcoBuilders",
+    "description": "Sustainable construction company specializing in eco-friendly building materials.",
+    "pipelineStatus": "Cold",
+    "markets": [
+      "Construction",
+      "Sustainability",
+      "Green Building"
+    ],
+    "lastUpdated": "2023-04-03T11:45:00Z"
+  },
+  {
+    "id": 14,
+    "name": "QuantumCompute",
+    "description": "Quantum computing startup developing next-generation processors.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Quantum Computing",
+      "Technology",
+      "Hardware"
+    ],
+    "lastUpdated": "2023-04-02T16:20:00Z"
+  },
+  {
+    "id": 15,
+    "name": "CyberGuard Solutions",
+    "description": "AI-powered cybersecurity platform for real-time threat detection and response.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Cybersecurity",
+      "Artificial Intelligence",
+      "Enterprise Software"
+    ],
+    "lastUpdated": "2023-04-01T10:00:00Z"
+  },
+  {
+    "id": 16,
+    "name": "SpaceTech Innovations",
+    "description": "Space technology company developing reusable launch vehicles.",
+    "pipelineStatus": "Passed",
+    "markets": [],
+    "lastUpdated": "2023-03-31T13:30:00Z"
+  },
+  {
+    "id": 17,
+    "name": "BioFuel Dynamics",
+    "description": "Renewable energy company producing advanced biofuels from algae.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Energy",
+      "Sustainability",
+      "Biotechnology"
+    ],
+    "lastUpdated": "2023-03-30T15:45:00Z"
+  },
+  {
+    "id": 18,
+    "name": "SmartCity Solutions",
+    "description": "Urban technology company creating integrated smart city management systems.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Smart Cities",
+      "IoT",
+      "Urban Planning"
+    ],
+    "lastUpdated": "2023-03-29T12:10:00Z"
+  },
+  {
+    "id": 19,
+    "name": "GenomeX Research",
+    "description": "Genomics research company focused on personalized medicine applications.",
+    "pipelineStatus": null,
+    "markets": [],
+    "lastUpdated": "2023-03-28T09:20:00Z"
+  },
+  {
+    "id": 20,
+    "name": "RoboTech Automation",
+    "description": "Industrial robotics company specializing in automated manufacturing solutions.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Robotics",
+      "Manufacturing",
+      "Automation"
+    ],
+    "lastUpdated": "2023-03-27T14:50:00Z"
+  },
+  {
+    "id": 21,
+    "name": "NeuroProsthetics Inc.",
+    "description": "Developing advanced brain-computer interfaces for prosthetic limb control.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Neurotechnology",
+      "Healthcare",
+      "Robotics"
+    ],
+    "lastUpdated": "2023-03-26T11:30:00Z"
+  },
+  {
+    "id": 22,
+    "name": "AquaCulture Innovations",
+    "description": "Sustainable aquaculture company using AI for optimized fish farming.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Aquaculture",
+      "Artificial Intelligence",
+      "Sustainability"
+    ],
+    "lastUpdated": "2023-03-25T09:45:00Z"
+  },
+  {
+    "id": 23,
+    "name": "FusionPower Systems",
+    "description": "Developing compact nuclear fusion reactors for clean energy generation.",
+    "pipelineStatus": "Cold",
+    "markets": [
+      "Energy",
+      "Nuclear Fusion",
+      "Clean Tech"
+    ],
+    "lastUpdated": "2023-03-24T14:20:00Z"
+  },
+  {
+    "id": 24,
+    "name": "CloudSec Dynamics",
+    "description": "Cloud-native security platform for multi-cloud environments.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Cybersecurity",
+      "Cloud Computing",
+      "Enterprise Software"
+    ],
+    "lastUpdated": "2023-03-23T16:10:00Z"
+  },
+  {
+    "id": 25,
+    "name": "BioFabrics",
+    "description": "Creating sustainable, biodegradable textiles from genetically modified bacteria.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Biotechnology",
+      "Textiles",
+      "Sustainability"
+    ],
+    "lastUpdated": "2023-03-22T10:55:00Z"
+  },
+  {
+    "id": 26,
+    "name": "QuantumCrypt",
+    "description": "Quantum-resistant encryption solutions for post-quantum cybersecurity.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Cybersecurity",
+      "Quantum Computing",
+      "Cryptography"
+    ],
+    "lastUpdated": "2023-03-21T13:40:00Z"
+  },
+  {
+    "id": 27,
+    "name": "AeroMobility",
+    "description": "Developing electric vertical takeoff and landing (eVTOL) aircraft for urban air mobility.",
+    "pipelineStatus": "Hot",
+    "markets": [
+      "Aviation",
+      "Electric Vehicles",
+      "Urban Transportation"
+    ],
+    "lastUpdated": "2023-03-20T15:15:00Z"
+  },
+  {
+    "id": 28,
+    "name": "NanoSolar Tech",
+    "description": "Nanotechnology-based solar cells with record-breaking efficiency.",
+    "pipelineStatus": null,
+    "markets": [
+      "Solar Energy",
+      "Nanotechnology",
+      "Clean Tech"
+    ],
+    "lastUpdated": "2023-03-19T11:25:00Z"
+  },
+  {
+    "id": 29,
+    "name": "AI Ethics Lab",
+    "description": "Developing frameworks and tools for ethical AI development and deployment.",
+    "pipelineStatus": null,
+    "markets": [
+      "Artificial Intelligence",
+      "Ethics",
+      "Consulting"
+    ],
+    "lastUpdated": "2023-03-18T09:50:00Z"
+  },
+  {
+    "id": 30,
+    "name": "HoloLearn",
+    "description": "Mixed reality educational platform for immersive, interactive learning experiences.",
+    "pipelineStatus": "Active",
+    "markets": [
+      "Education",
+      "Augmented Reality",
+      "EdTech"
+    ],
+    "lastUpdated": "2023-03-17T14:05:00Z"
+  }
+]
