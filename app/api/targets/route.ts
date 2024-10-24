@@ -43,7 +43,7 @@ export async function PUT(req: NextRequest) {
       target.id === id ? { ...target, pipelineStatus: newStatus, lastUpdated: currentDate } : target
     );
 
-    await writeTargets(updatedTargets);
+    writeTargets(updatedTargets);
 
     return NextResponse.json({ message: 'Pipeline status updated successfully.' }, { status: 200 });
   } catch (error) {

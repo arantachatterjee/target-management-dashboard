@@ -4,17 +4,8 @@ import { useEffect, useState, useCallback } from "react";
 import BarChart from "@/components/BarChart";
 import TargetTable from "@/components/TargetTable";
 import SuccessMessageModal from "@/components/SuccessMessageModal";
-import { Target, PIPELINE_STATUSES } from "@/lib/types";
-
-/**
- * Retrieves unique pipeline statuses from the given array of acquisition targets.
- * If a target's status is null, it is considered "Unknown."
- * @param {Target[]} targets - The array of acquisition targets.
- * @returns {string[]} An array of unique pipeline statuses.
- */
-const getUniqueStatuses = () => {
-  return [...PIPELINE_STATUSES, "Unknown"]
-};
+import { Target } from "@/lib/types";
+import { getUniqueStatuses } from "@/lib/utils";
 
 /**
  * Sorts an array of acquisition targets by their pipeline status and last updated date.
@@ -27,7 +18,7 @@ const sortTargets = (targets: Target[]) => {
     const statusComparison = (a.pipelineStatus ?? "Unknown").localeCompare(b.pipelineStatus ?? "Unknown");
     if (statusComparison !== 0) return statusComparison;
 
-    // Assuming lastUpdated is in ISO format (e.g., '2024-10-20T12:00:00Z')
+    // Considering dates are in ISO format (e.g., '2024-10-20T12:00:00Z')
     return new Date(b.lastUpdated).getTime() - new Date(a.lastUpdated).getTime();
   });
 };
@@ -90,7 +81,6 @@ export default function Dashboard() {
 
       // Refetch and sort data after successful update
       setSuccessMessageModal(true);
-      await fetchTargets();
     } catch (error) {
       console.error(error);
       alert("Something went wrong. Please try again and if the issue persists, contact support at support@analyst3.ai.");

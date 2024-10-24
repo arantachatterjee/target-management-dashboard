@@ -1,5 +1,5 @@
 import React from "react";
-import { Target } from "@/lib/types"
+import { Target } from "@/lib/types";
 
 /**
  * Props for the TargetTable component.
@@ -15,17 +15,6 @@ interface TargetTableProps {
 }
 
 /**
- * Helper function to extract unique statuses from the list of acquisition targets.
- * Null statuses are treated as "Unknown".
- * @param {Target[]} targets - List of targets.
- * @returns {string[]} An array of unique pipeline statuses.
- */
-const getUniqueStatuses = (targets: Target[]) => {
-  const statuses = targets.map((target) => target.pipelineStatus || "Unknown");
-  return Array.from(new Set(statuses)); // Get unique statuses
-};
-
-/**
  * TargetTable component to display acquisition targets in a grouped, sortable table.
  * @component
  * @param {TargetTableProps} props - Props for the component.
@@ -33,11 +22,9 @@ const getUniqueStatuses = (targets: Target[]) => {
  */
 export default function TargetTable({ 
   targets,
+  uniquePipelineStatuses,
   onUpdatePipelineStatus,
 }: TargetTableProps) {
-  // Fetch unique statuses
-  const uniqueStatuses = getUniqueStatuses(targets);
-
    // Group targets by pipeline status
    const groupedTargets = targets.reduce((acc, target) => {
     const status = target.pipelineStatus || "Unknown"; // Default to "Unknown" if pipelineStatus is null
@@ -99,7 +86,7 @@ export default function TargetTable({
                       }
                       className="border rounded p-1"
                     >
-                      {uniqueStatuses.map((status) => (
+                      {uniquePipelineStatuses.map((status) => (
                         <option key={status} value={status}>
                           {status}
                         </option>
