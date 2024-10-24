@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import BarChart from "@/components/BarChart";
 import TargetTable from "@/components/TargetTable";
 import SuccessMessageModal from "@/components/SuccessMessageModal";
-import { Target } from "@/lib/types";
+import { Target, PIPELINE_STATUSES } from "@/lib/types";
 
 /**
  * Retrieves unique pipeline statuses from the given array of acquisition targets.
@@ -12,9 +12,8 @@ import { Target } from "@/lib/types";
  * @param {Target[]} targets - The array of acquisition targets.
  * @returns {string[]} An array of unique pipeline statuses.
  */
-const getUniqueStatuses = (targets: Target[]) => {
-  const statuses = targets.map((target) => target.pipelineStatus ?? "Unknown");
-  return Array.from(new Set(statuses)); // Get unique statuses
+const getUniqueStatuses = () => {
+  return [...PIPELINE_STATUSES, "Unknown"]
 };
 
 /**
@@ -40,7 +39,7 @@ export default function Dashboard() {
   const [showSuccessMessageModal, setSuccessMessageModal] = useState(false);
 
   // Fetch unique pipeline statuses
-  const uniquePipelineStatuses = getUniqueStatuses(targets);
+  const uniquePipelineStatuses = getUniqueStatuses();
 
   /**
    * Fetches acquisition targets from the API and updates the state.
@@ -49,7 +48,14 @@ export default function Dashboard() {
   const fetchTargets = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch("/api/targets");
+      const response = await fetch("/api/targets", {
+        method: "GET",
+        headers: {
+          "Cache-Control": "no-cache, no-store, must-revalidate", // Ensure API response is not cached
+          Pragma: "no-cache",
+          Expires: "0",
+        },
+      });
       if (!response.ok) throw new Error("Failed to fetch targets.");
       const data = await response.json();
       setTargets(sortTargets(data)); // Sort targets after fetching

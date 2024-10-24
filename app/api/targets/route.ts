@@ -1,15 +1,23 @@
+export const dynamic = 'force-dynamic';
+
 import { NextResponse, NextRequest } from 'next/server'
 import fs from 'fs/promises'
 import path from 'path'
-import targetsData from '../../../data/targets.json'
-
 
 /**
  * Handles the GET request to retrieve all acquisition targets.
  * @returns {NextResponse} A JSON response containing the targets data.
  */
 export async function GET() {
-  return NextResponse.json(targetsData)
+  try {
+    const filePath = getTargetsFilePath();
+    const data = await fs.readFile(filePath, 'utf8');
+    const targetsData = JSON.parse(data);
+    return NextResponse.json(targetsData);
+  } catch (error) {
+    console.error('Error reading targets data:', error);
+    return NextResponse.json({ error: 'Error reading targets data.' }, { status: 500 });
+  }
 }
 
 /**

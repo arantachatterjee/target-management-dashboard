@@ -35,3 +35,7 @@ Open your browser and navigate to http://localhost:3000 (or the URL shown in you
 <a href="./demo/TargetManagementDashboardDemo.mov" target="_blank">
   <img src="./demo/DashboardDemoThumbnail.png" style="width:600px;" alt="Watch the video">
 </a>
+
+<br>
+
+**Note: This app is currently not supported in dark mode.**
